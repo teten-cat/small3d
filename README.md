@@ -17,16 +17,16 @@
 
 ## Demo
 
-<video src="./showcase/mug.mp4"></video>
-<video src="./showcase/house.mp4"></video>
-<video src="./showcase/shapes.mp4"></video>
+<video src="https://github.com/teten-cat/small3d/showcase/mug.mp4"></video>
+<video src="https://github.com/teten-cat/small3d/showcase/house.mp4"></video>
+<video src="https://github.com/teten-cat/small3d/showcase/shapes.mp4"></video>
 
 ## Known Errors and Unfinished Business
 * **Object not loading** sometimes the objects doesn't load and only a pixel rotating can be visible. When that happens try turning it on and off again, no need to recompile it.
 * **Unfinished Depth Buffer:** A depth buffer was in progress but failed to make it in time.
 * **Only Triangulated .obj files work** only .obj files that it's faces are cut into triangles can be displayed (Ctrl+t in blender while selecting faces). Attemps were made to make a Triangulator but faled and I got sick in the progress.
 
-<img src="./showcase/broken_depth.mp4"></video>
+<video src="https://github.com/teten-cat/small3d/showcase/broken_depth.mp4"></video>
 
 ## Compile
 
