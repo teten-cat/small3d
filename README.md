@@ -10,16 +10,33 @@
 
 ## Demo
 
-<video src="https://github.com/user-attachments/assets/56d639bb-c4ed-4ca8-9db4-c3b50b5d59ee" width="50%"></video> <video src="https://github.com/user-attachments/assets/5803c1dc-b75a-413f-b2f3-068b9e8f1bdd" width="50%"></video>  
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/c77f6298-1a81-4734-822b-711251023a04" width="50%"></video>
-</div>
+
+<table>
+  <tr>
+    <td>
+		<video align="center" src="https://github.com/user-attachments/assets/56d639bb-c4ed-4ca8-9db4-c3b50b5d59ee"></video>
+    </td>
+    <td>
+      <video align="center" src="https://github.com/user-attachments/assets/5803c1dc-b75a-413f-b2f3-068b9e8f1bdd"></video>
+    </td>
+    <td>
+      <video align="center" src="https://github.com/user-attachments/assets/c77f6298-1a81-4734-822b-711251023a04" width="30%"></video>
+    </td>
+  </tr>
+</table>
+
 ## Known Errors and Unfinished Business
 * **Object not loading** sometimes the objects doesn't load and only a pixel rotating can be visible. When that happens try turning it on and off again, no need to recompile it.
 * **Unfinished Depth Buffer:** A depth buffer was in progress but failed to make it in time.
 * **Only Triangulated .obj files work** only .obj files that it's faces are cut into triangles can be displayed (Ctrl+t in blender while selecting faces). Attempts were made to make a Triangulator but failed and I got sick in the progress.
 
-<video src="https://github.com/user-attachments/assets/06da2e44-47fb-40a5-a891-68d8c6eb4145" width="640"></video>
+<table>
+  <tr>
+    <td>
+      <video align="center" src="https://github.com/user-attachments/assets/06da2e44-47fb-40a5-a891-68d8c6eb4145" height="300px"></video>
+    </td>
+  </tr>
+</table>
 
 ## Compile
 
