@@ -25,6 +25,23 @@
   </tr>
 </table>
 
+## Moving objects
+Objects can be moved by simply editing the position/rotation/scale vector on the DisplayObject  
+Example:  
+```
+main_object->scale = Fill_vec3(2.5);
+main_object->position.y = -1;
+main_object->position.z = -5;
+main_object->rotation.y += 5 * ONE_DEG_IN_RAD;
+Render(*main_object);
+
+# After this main_object will have the properties
+position (0, -1, -5)
+rotation (0, 5 * ONE_DEG_IN_RAD, 0)
+scale (2.5, 2.5, 2.5)
+```
+
+
 ## Known Errors and Unfinished Business
 * **Object not loading** sometimes the objects doesn't load and only a pixel rotating can be visible. When that happens try turning it on and off again, no need to recompile it.
 * **Unfinished Depth Buffer:** A depth buffer was in progress but failed to make it in time.
