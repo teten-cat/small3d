@@ -334,11 +334,9 @@ if(argc >= 2) {
 
 
 
-  if(isImportingOBJ) {
-    imported_diplayobj->scale = Fill_vec3(2.5);
-    imported_diplayobj->position.z = -5;
-    imported_diplayobj->position.y = -1;
-  }
+  main_object->scale = Fill_vec3(2.5);
+  main_object->position.z = -5;
+  main_object->position.y = -1;
 
 
   while(render_loop) {
@@ -349,16 +347,8 @@ if(argc >= 2) {
     
   // ----------------------------------------------------------
 
-  if(isImportingOBJ) {
-    imported_diplayobj->rotation.y += 5 * ONE_DEG_IN_RAD;
-    printf("rendering imported object\n");
-    Render(*imported_diplayobj);
-  } else {
-    printf("rendering MUG\n");
-    Mug.rotation.y += 5 * ONE_DEG_IN_RAD;
-    Render(Mug);
-  }
-
+  main_object->rotation.y += 5 * ONE_DEG_IN_RAD;
+  Render(*main_object);
 
   // ----------------------------------------------------------
   
