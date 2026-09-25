@@ -45,9 +45,9 @@ void Print_WHOLE_Indc(Mesh* mesh) {
 void Normal_Mesh(Mesh* mesh) {
   // equivillant to blenders "set origin to geomery" and moving object to (0, 0, 0)
 
-  float maxX, maxY, maxZ = -INFINITY;
-  float minX, minY, minZ = INFINITY;
-
+  float maxX = -INFINITY, maxY = -INFINITY, maxZ = -INFINITY;
+  float minX = INFINITY, minY = INFINITY, minZ = INFINITY;
+  
   for(int i = 0; i < mesh->vertices_length; i++) {
     if(mesh->vertices[i].position.x > maxX) maxX = mesh->vertices[i].position.x;
     if(mesh->vertices[i].position.y > maxY) maxY = mesh->vertices[i].position.y;
