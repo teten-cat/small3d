@@ -243,7 +243,7 @@ if(argc >= 2) {
   //   .indices = Cube_indices,
   //   .indices_length = sizeof(Cube_indices) /(sizeof(Cube_indices[0]) * 3)
   // };
-  Mesh UnitCube_mesh = OBJ_Parse("../import/CubeTessalated.obj");
+  Mesh UnitCube_mesh = OBJ_Parse("import/CubeTessalated.obj");
   DisplayObject Cube = {
     .mesh = &UnitCube_mesh,
     .position = Zero_vec3(),
@@ -253,7 +253,7 @@ if(argc >= 2) {
     .mode = WIREFRAME
   };
 
-  Mesh Mug_mesh = OBJ_Parse("../import/ATessellatedMug.obj");
+  Mesh Mug_mesh = OBJ_Parse("import/ATessellatedMug.obj");
 
   Normal_Mesh(&Mug_mesh); // make it's bounding box into a 1x1x1 cube
   DisplayObject Mug = {
