@@ -7,7 +7,7 @@ runprogram: clean
 		sudo ./main $(ARGS)
 
 clean: compile
-		gcc clear.c -o clear
+		gcc src/clear.c -o clear
 		sudo ./clear
 
 compile:
